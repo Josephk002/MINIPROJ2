@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Product Management System</h1>
+    <p><a href="{{ url_for('enter_product') }}">Enter Product</a></p>
+    <p><a href="{{ url_for('retrieve_product') }}">Retrieve Product</a></p>
+</body>
+</html>
